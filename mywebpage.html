@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <style type="text/css">
+        label{
+            width: 100px;
+            display: inline-block;
+            
+        }
+        input{
+           font-weight: bold;
+           color: black; 
+        }
+        
+
+        
+
+</style>
+    
+
+    <title>Simple Interest Calculator</title>
+</head>
+<body>
+    
+        <div class="maindiv">
+        <h1>Simple Interest Calculator</h1>
+        
+           <!-- Principle Amount-->
+
+
+        <label for="Amount" id="name"><b>Amount</b></label>
+
+        <input type="number" placeholder="Enter The Amount" 
+        id="amount" value="input" onsubmit="Required()" oninput='chercker()'/><br>
+        
+
+            <!-- SliderRange 1-20 count-->
+
+
+        <div class="sliderrange">
+            <label for="interest-rate"><b>Interest Rate</b></label>
+            <input type="range" min="1" max="20" step="0.25" value="10.25" class="rate" id="interest-rate">
+            <span id="rate" step="0.25"></span>%
+        </div>
+
+            <!-- Year Dropdown Box-->
+
+
+        <label for="Years"><b>No. of Years</b></label>
+        <select style="font-weight: bold;" id="years">
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option> 
+        
+            <!-- filled upto 12 years -->
+        </select><br><br>
+
+            <!-- Calculate button-->
+
+        <button onclick="calculate()" value="calculate">Compute Interest</button><br>
+
+             <!--Final output showing-->
+
+        <p><b>If you deposit : <span id="output1" style="background-color: yellow;"></span>,<br>
+           at an interest-rate of :<span id="output2"style="background-color: yellow;" ></span>%,<br>
+           You will receive an amount of :<span id="output3"style="background-color: yellow;"></span><br>  
+           in the year : <span id="output4" style="background-color: yellow;"></span></b><br>
+        </p>
+        
+
+
+        
+
+        
+        
+    
+        <div class="footer">
+            <p> © Everyone can Get Rich<br>
+                 This Calculator belongs to p.s.watmode
+        </p></div>
+    </div>
+
+        
+
+
+            
+
+
+    </body>
+</html>
